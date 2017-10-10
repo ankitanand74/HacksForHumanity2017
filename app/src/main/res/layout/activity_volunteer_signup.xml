@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbkg"
+    android:backgroundTint="#80000000"
+    android:backgroundTintMode="src_over"
+    tools:context="ankit.com.hacksforhumanity2017.FormsActivity">
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/picture_frame"
+        android:src="@drawable/clickme"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/phoneNo"
+        android:layout_below="@id/user_image"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cell Phone"/>
+
+    <EditText
+        android:id="@+id/edit_cellPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter mobile No."
+        android:background="#FFFFFFFF"
+        android:inputType="phone"
+        android:layout_below="@+id/user_image"
+        android:layout_toEndOf="@id/phoneNo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp" />
+
+
+    <TextView
+        android:id="@+id/skypeID"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:text="Skype ID"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/phoneNo"
+        android:layout_alignStart="@id/phoneNo" />
+
+    <EditText
+        android:id="@+id/edit_skypeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Skype ID"
+        android:background="#FFFFFFFF"
+        android:layout_below="@+id/phoneNo"
+        android:layout_toEndOf="@id/skypeID"
+        android:layout_alignStart="@id/edit_cellPhone"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/address_button"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skypeID"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickChooseAddressButton"
+        android:text="Choose Your Address :)"/>
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_button"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickDoneButton"
+        android:text="I'm Done !!"/>
+
+</RelativeLayout>

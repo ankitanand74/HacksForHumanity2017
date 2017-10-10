@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HelpingHands</string>
+    <string name="speech_prompt">Tell Me What You Want to do&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+
+    <string name="topic_prompt">Topic</string>
+
+    <string name="sub_topic_prompt">Sub-topic</string>
+    <string-array name="topic_array">
+        <item>Select</item>
+        <item>Education</item>
+        <item>Social</item>
+    </string-array>
+    <string-array name="sub_topic_array">
+        <item>Select</item>
+        <item>Maths</item>
+        <item>Science</item>
+        <item>Bully</item>
+        <item>Theft</item>
+    </string-array>
+
+</resources>

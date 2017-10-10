@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbkg"
+    android:backgroundTint="#80000000"
+    android:backgroundTintMode="src_over"
+    tools:context="ankit.com.hacksforhumanity2017.FormsActivity">
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/voice_btn"
+        android:layout_marginEnd="14dp" />
+
+    <Spinner
+        android:id="@+id/spinner_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/topic_array"
+        android:background="#FFFFFFFF"
+        android:layout_alignTop="@+id/category"
+        android:layout_alignStart="@+id/spinner_2" />
+
+    <TextView
+        android:id="@+id/subCateogry"
+        android:layout_marginTop="26dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub-Category"
+        android:layout_below="@+id/spinner_1"
+        android:layout_toStartOf="@+id/voice_btn" />
+
+    <Spinner
+        android:id="@+id/spinner_2"
+        android:layout_marginStart="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:entries="@array/sub_topic_array"
+        android:layout_alignBottom="@+id/subCateogry"
+        android:layout_alignStart="@+id/voice_btn" />
+
+    <Button
+        android:id="@+id/get_help"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/subCateogry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickHelpButton"
+        android:text="GET HELP !!"/>
+
+    <ImageButton
+        android:id="@+id/voice_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="onClickVoiceButton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_action_microphone"
+        android:contentDescription="Tell us what you want to do"
+        android:layout_above="@+id/showSpeechToText" />
+
+    <TextView
+        android:id="@+id/showSpeechToText"
+        android:text="You want help In which category ?"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbkg"
+    android:backgroundTint="#80000000"
+    android:backgroundTintMode="src_over"
+    tools:context="ankit.com.hacksforhumanity2017.VolunteerInfoActivity">
+
+    <TextView
+        android:id="@+id/checkOutYoutube"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check out the following Youtube link :" />
+
+    <Button
+        android:id="@+id/youTubeLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/checkOutYoutube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLaunchYoutubeButton"
+        android:text="CLICK HERE !!"/>
+
+    <Button
+        android:id="@+id/show_on_map_button"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/youTubeLink"
+        android:onClick="onClickShowMapButton"
+        android:text="Show me the nearest Helping Hands"/>
+
+    <Button
+        android:id="@+id/call_nearest_helping_hand"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/show_on_map_button"
+        android:onClick="onClickCallButton"
+        android:text="Call nearest Helping Hands"/>
+
+    <Button
+        android:id="@+id/skype_call"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/call_nearest_helping_hand"
+        android:onClick="onClickSkypeButton"
+        android:text="Skype the nearest Helping Hands"/>
+
+</RelativeLayout>
